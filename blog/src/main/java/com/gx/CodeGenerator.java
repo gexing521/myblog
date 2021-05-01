@@ -45,7 +45,7 @@ public class CodeGenerator {
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
 //        gc.setOutputDir("D:\\test");
-        gc.setAuthor("关注公众号：MarkerHub");
+        gc.setAuthor("gx");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
         gc.setServiceName("%sService");
@@ -53,7 +53,7 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.105.40.243:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
